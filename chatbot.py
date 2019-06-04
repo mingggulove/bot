@@ -1,5 +1,6 @@
 import discord
 import random
+import os
 import requests
 client = discord.Client()
 
@@ -21,5 +22,5 @@ async def on_message(message):
  if message.content.startswith("모모야"):
    await message.channel.send("저찾으셨나요?히히")
 
-
-client.run('NTg1MjU0NjUyMTI0MjAwOTY0.XPXDcw.SCh26DdyPMiXCzmutsGxaxQaeaA')
+access.token = os.environ["BOT_TOKEN"]
+client.run(access_token)
